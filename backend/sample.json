@@ -1,0 +1,22 @@
+[
+    {   
+        "topic_title": "Introduction to Web Development",
+        "topic_description": "This topic covers the basics of web development, including HTML, CSS, and JavaScript. It provides an overview of how websites are built and the tools needed to create them."
+    },
+    {
+        "topic_title": "Understanding Databases",
+        "topic_description": "This topic introduces the concept of databases, including relational and non-relational databases. It explains how to store, manage, and retrieve data efficiently."
+    },
+    {
+        "topic_title": "Responsive Web Design",
+        "topic_description": "This topic focuses on creating websites that work well on various devices and screen sizes. It covers the principles of responsive design and how to use media queries and flexible layouts."
+    },
+    {
+        "topic_title": "JavaScript Frameworks",
+        "topic_description": "This topic explores popular JavaScript frameworks such as React, Angular, and Vue.js. It discusses their features, benefits, and how they simplify the process of building dynamic web applications."
+    },
+    {
+        "topic_title": "Version Control with Git",
+        "topic_description": "This topic explains the basics of version control using Git. It covers essential commands, branching, merging, and collaborating on projects using GitHub."
+    }
+]

@@ -1,0 +1,150 @@
+/* App.css */
+
+/* Basic styling */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Error message styling */
+.error {
+    color: #d9534f;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Input and button styling */
+input[type='text'],
+input[type='search'] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:disabled {
+    background-color: #c6c6c6;
+    cursor: not-allowed;
+}
+
+/* Form layout */
+.form-container {
+    margin-bottom: 20px;
+}
+
+.form-container input[type='search'] {
+    width: calc(100% - 92px); /* Adjust width to make room for the button */
+}
+
+.form-container button {
+    width: 80px; /* Fixed width for the button */
+}
+
+/* Table cell styling for buttons */
+.table td button {
+    background-color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.table td button:hover {
+    background-color: #0056b3;
+}
+
+/* No records found styling */
+.table tr td[colSpan="5"] {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}
+/* Add styles for the edit and delete buttons */
+.table td button {
+    background-color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.table td button.edit {
+    background-color: #ffc107;
+}
+
+.table td button.delete {
+    background-color: #dc3545;
+}
+
+.table td button:hover {
+    opacity: 0.9;
+}
+
+.table td button.edit:hover {
+    background-color: #e0a800;
+}
+
+.table td button.delete:hover {
+    background-color: #c82333;
+}
+
