@@ -15,7 +15,7 @@ const App = () => {
 
     const getAllUsers = async () => {
         try {
-            const res = await axios.get("http://localhost:3000/users");
+            const res = await axios.get("https://crud-0fr4.onrender.com/users");
             setUsers(res.data);
             setLoading(false);
         } catch (error) {
@@ -31,7 +31,7 @@ const App = () => {
 
     const handleAddRecord = async () => {
         try {
-            const res = await axios.post("http://localhost:3000/users", newUser);
+            const res = await axios.post("https://crud-0fr4.onrender.com/users", newUser);
             setUsers([...users, res.data]);
             setNewUser({ topic_title: '', topic_description: '' });
         } catch (error) {
@@ -46,7 +46,7 @@ const App = () => {
                 topic_title: newUser.topic_title,
                 topic_description: newUser.topic_description
             };
-            await axios.put(`http://localhost:3000/users/${userId}`, updatedUser);
+            await axios.put(`https://crud-0fr4.onrender.com/users/${userId}`, updatedUser);
             setUsers(users.map(user =>
                 user._id === userId ? { ...user, ...updatedUser } : user
             ));
@@ -61,7 +61,7 @@ const App = () => {
     // Delete a user
     const handleDeleteRecord = async (userId) => {
         try {
-            await axios.delete(`http://localhost:3000/users/${userId}`);
+            await axios.delete(`https://crud-0fr4.onrender.com/users/${userId}`);
             setUsers(users.filter(user => user._id !== userId));
         } catch (error) {
             setError('Error deleting user');
@@ -69,8 +69,7 @@ const App = () => {
         }
     };
 
-    const handleSearchClick = () => {
-    };
+    
 
     const handleSearchChange = (e) => {
         setSearchTerm(e.target.value);
@@ -104,7 +103,6 @@ const App = () => {
                             value={searchTerm}
                             onChange={handleSearchChange}
                         />
-                        <button onClick={handleSearchClick}>Search</button>
                         <div className='form-group'>
                             <input
                                 type='text'
